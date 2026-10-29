@@ -319,7 +319,7 @@ const errToast    = document.getElementById('err-toast');
 const apiBadge    = document.getElementById('api-status-badge');
 
 // Show badge status based on whether key is set
-if (!GROQ_API_KEY || GROQ_API_KEY === "PASTE_YOUR_API_KEY_HERE") {
+if (!GROQ_API_KEY || GROQ_API_KEY === "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") {
   apiBadge.textContent = "NO KEY ✗";
   apiBadge.style.borderColor = "rgba(255,80,80,0.4)";
   apiBadge.style.color = "#ff6060";
@@ -542,7 +542,7 @@ function handleAction(text) {
 
 // ── Groq API call ─────────────────────────────────────────────────────────────
 async function callGroqAPI(messages) {
-  if (!GROQ_API_KEY || GROQ_API_KEY === "PASTE_YOUR_API_KEY_HERE") {
+  if (!GROQ_API_KEY || GROQ_API_KEY === "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") {
     throw new Error('No API key found. Open the HTML file and replace PASTE_YOUR_API_KEY_HERE with your actual Groq key (starts with gsk_).');
   }
 
